@@ -1,14 +1,15 @@
 import OpenAI from "openai";
-import dotenv from "dotenv";
+import "dotenv/config";
 import readline from "readline";
 
-dotenv.config();
+console.log("API KEY FULL:", process.env.OPENAI_API_KEY);
+console.log("LENGTH:", process.env.OPENAI_API_KEY?.length);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const assistantId = "asst_txj62JqKupCSFXPGIMH1rBZg";
+const assistantId = "asst_hGUORBTHEX95WWcuFRQXAhqT";
 
 const rl = readline.createInterface({
   input: process.stdin,

@@ -17,12 +17,12 @@ async function run() {
   //message
   await openai.beta.threads.messages.create(thread.id, {
     role: "user",
-    content: "How do I create a video wall in OptiSigns?"
+    content: "How do I add a YouTube video?"
   });
 
 
   const runResult = await openai.beta.threads.runs.create(thread.id, {
-    assistant_id: "asst_txj62JqKupCSFXPGIMH1rBZg"
+    assistant_id: "asst_hGUORBTHEX95WWcuFRQXAhqT"
   });
 
   let status = runResult.status;
